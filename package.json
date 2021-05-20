@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "scss poject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss:css/style.css --watch",
+    "compile": "sass scss/style.scss:css/style.css",
+    "prefix": "postcss --use autoprefixer -o css/style.css css/style.css",
+    "minify": "cleancss --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
+    "build": "npm run compile && npm run prefix && npm run minify"
+  },
+  "author": "Aleks",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "clean-css-cli": "^5.2.1",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.8"
+  },
+  "browserslist": [
+    "last 4 version"
+  ]
+}

@@ -1,0 +1,36 @@
+@import "hero.scss";
+@import "weDo.scss";
+@import "news.scss";
+@import "gallery.scss";
+@import "form_footer.scss";
+@import "footer.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: 'gothambold1';
+	src: url('/fonts/gothambold/gothambold1.ttf');
+}
+@font-face {
+    font-family: 'gothammedium';
+    src: url('/fonts/gothamMediumRegular/gothamMediumRegular.ttf');
+}
+@font-face {
+    font-family: 'gothambook';
+    src: url('/fonts/gothamBook/GothamBook.ttf');
+}
+
+$bold: 'gothambold1';
+$medium: 'gothammedium';
+$book: 'gothambook';
+
+.button__hover:hover {
+    transition: .2s;
+    background-color: #2C4058;
+}
+.button__hover:hover a {
+    color: white;
+}

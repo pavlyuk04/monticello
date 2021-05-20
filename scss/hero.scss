@@ -1,0 +1,416 @@
+$bold: 'gothambold1';
+$medium: 'gothammedium';
+$book: 'gothambook';
+$grey: #2C4058;
+
+.hero {
+    position: relative;
+    background-image: linear-gradient(45deg, rgb(87, 185, 255, 0.8) 0%, rgb(125, 89, 255) 100%),url(../img/bg1.png);
+    background-size: cover;
+    max-width: 1920px;
+    width: 100%;
+    height: 800px;
+    &__body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__header {
+            transition: 1s;
+            background: none;
+            position: fixed;
+            z-index: 100;
+            top: 50px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            .header__logo {
+                padding: 0 0 0 200px;
+            }
+            .header__menu {
+                width: 100%;
+                &__body {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .menu__burger {
+                        display: none;
+                        position: absolute;
+                        right: 0;
+                        width: 40px;
+                        height: 40px;
+                        &__line {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            span {
+                                position: relative;
+                                top: 50%;
+                                display: block;
+                                height: 2px;
+                                background-color: white;
+                            }
+                            span::before {
+                                content: "";
+                                position: relative;
+                                top: -16px;
+                                display: block;
+                                height: 2px;
+                                background-color: white;
+                            }
+                            span::after {
+                                content: "";
+                                position: relative;
+                                top: 16px;
+                                display: block;
+                                height: 2px;
+                                background-color: white;
+                            }
+                        }
+                    }
+                    .menu__nav {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        list-style: none;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                font-family: $book;
+                                font-size: 14px;
+                                color: white;
+                            }
+                            span {
+                                margin: 0 10px 0 0;
+                                display: block;
+                                width: 8px;
+                                height: 8px;
+                                border: 1px solid white;
+                                border-radius: 50%;
+                            }
+                            .active-span {
+                                background-color: white;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            .header__social {
+                padding: 0 200px 0 0px;
+                display: flex;
+                align-items: center;
+                &__img {
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 0 0 20px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        &__text {
+            text-align: center;
+            h1 {
+                font-family: $bold;
+                font-size: 80px;
+                color: white;
+                letter-spacing: 4px;
+            }
+            p {
+                margin: 10px 0;
+                font-family: $book;
+                font-size: 16px;
+                color: white;
+                letter-spacing: 6px;
+            }
+        }
+        &__arrow {
+            position: absolute;
+            bottom: 50px;
+            width: 41px;
+            height: 41px;
+            border-radius: 50%;
+            border: 1px solid white;
+            a {
+                height: 41px;
+                display: block;
+                img {
+                    width: 14px;
+                    height: 14px;
+                    margin: 14px 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .hero {
+        &__body {
+            &__header {
+                
+                .header__logo {
+                    padding: 0 0 0 100px;
+                }
+                .header__social {
+                    padding: 0 100px 0 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero {
+        &__body {
+            &__header {
+                .header__logo {
+                    padding: 0 0 0 50px;
+                }
+                .header__social {
+                    padding: 0 50px 0 0px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        &__body {
+            &__header {
+                .header__menu {
+                    &__body {
+                        .menu__burger {
+                            display: block;
+                            top: 0;
+                            right: 50px;
+                            transition: .1s;
+                                span {
+                                    position: relative;
+                                    top: 50%;
+                                    display: block;
+                                    height: 2px;
+                                    background-color: white;
+                                    transition: .1s;
+                                }
+                                span::before {
+                                    content: "";
+                                    position: relative;
+                                    top: -16px;
+                                    display: block;
+                                    height: 2px;
+                                    background-color: white;
+                                    transition: .1s;
+                                }
+                                span::after {
+                                    content: "";
+                                    position: relative;
+                                    top: 16px;
+                                    display: block;
+                                    height: 2px;
+                                    background-color: white;
+                                    transition: .0s;
+                                }   
+                        }
+                        .active {
+                            
+                            span{
+                                transform: rotate(-45deg);
+                            }
+                            span::before {
+                                transform: rotate(90deg);
+                                top: 0;
+                            }
+                            span::after {
+                                background-color: rgb(255, 255, 255, 0);
+                                transition: .0s;
+                            }
+                        }
+                        .menu__nav {
+                            height: 150px;
+                            width: 100%;
+                            display: none;
+                            list-style: none;
+                            li {
+                                width: max-content;
+                                display: flex;
+                                align-items: center;
+                                margin: 20px auto;
+                                a {
+                                    text-decoration: none;
+                                    font-family: $book;
+                                    font-size: 14px;
+                                    color: white;
+                                }
+                                span {
+                                    margin: 0 10px 0 0;
+                                    display: block;
+                                    width: 8px;
+                                    height: 8px;
+                                    border: 1px solid white;
+                                    border-radius: 50%;
+                                }
+                            }   
+                        }
+                    }
+                }
+                .header__social {  
+                    display: none;
+                }
+            }    
+        }
+    }
+}
+@media screen and (max-width: 886px) {
+    .hero {
+        height: 700px;
+        &__body {
+            &__header {
+
+                .header__logo {
+                    padding: 0 0 0 20px;
+                }
+                .header__menu {
+                    &__body {
+                        .menu__burger {
+                            right: 20px;
+
+                        }
+                    }
+                }
+            }
+            &__text {
+                text-align: center;
+                h1 {
+                    font-size: 60px;
+                    letter-spacing: 2px;
+                }
+                p {
+                    margin: 10px 0;
+                    font-size: 14px;
+                    letter-spacing: 6px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .hero {
+        height: 600px;
+        &__body {
+            &__header {
+                top: 0px;
+                flex-direction: column;
+                .header__logo {
+                    margin: 0 auto;
+                    padding: 0 0 0 0px;
+                }
+                .header__menu {
+                    width: 100%;
+                    max-height: 150px;
+                    height: 100%;
+                    &__body {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        .menu__burger {
+                            display: block;
+                            top: 5px;
+                            width: 40px;
+                            height: 40px;
+                            transition: .1s;
+                                span {
+                                    position: relative;
+                                    top: 50%;
+                                    display: block;
+                                    height: 2px;
+                                    background-color: $grey;
+                                    transition: .1s;
+                                }
+                                span::before {
+                                    content: "";
+                                    position: relative;
+                                    top: -16px;
+                                    display: block;
+                                    height: 2px;
+                                    background-color: $grey;
+                                    transition: .1s;
+                                }
+                                span::after {
+                                    content: "";
+                                    position: relative;
+                                    top: 16px;
+                                    display: block;
+                                    height: 2px;
+                                    background-color: $grey;
+                                    transition: .0s;
+                                }   
+                        }
+                        .active {
+                            
+                            span{
+                                transform: rotate(-45deg);
+                                // background-color: rgb(255, 255, 255, 0);
+                            }
+                            span::before {
+                                transform: rotate(90deg);
+                                top: 0;
+                            }
+                            span::after {
+                                background-color: rgb(255, 255, 255, 0);
+                                transition: .0s;
+                            }
+                        }
+                        .menu__nav {
+                            height: 150px;
+                            width: 100%;
+                            display: none;
+                            list-style: none;
+                            li {
+                                width: max-content;
+                                display: flex;
+                                align-items: center;
+                                margin: 20px auto;
+                                a {
+                                    text-decoration: none;
+                                    font-family: $book;
+                                    font-size: 14px;
+                                    color: white;
+                                }
+                                span {
+                                    margin: 0 10px 0 0;
+                                    display: block;
+                                    width: 8px;
+                                    height: 8px;
+                                    border: 1px solid white;
+                                    border-radius: 50%;
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+            &__text {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,588 @@
+$grey: #2C4058;
+$bold: 'gothambold1';
+$medium: 'gothammedium';
+$book: 'gothambook';
+
+.wedo {
+    max-width: 1920px;
+    width: 100%;
+    &__body {
+        padding: 100px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__header {
+            text-align: center;
+            .line {
+                margin: 0 auto;
+                width: 100px;
+                height: 2px;
+                background-color: $grey;
+            }
+            h3 {
+                font-family: $bold;
+                font-size: 44px;
+                color: $grey;
+                margin-top: 40px;
+            }
+        }
+        &__trade {
+            width: 100%;
+            .trade__body {
+                margin: 100px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                &__img {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    max-width: 850px;
+                    width: 100%;
+                    position: relative;
+                    .trade__img__bg {
+                        padding-left: 50px;
+                        position: absolute;
+                        z-index: -10;
+                        top: -50px;
+                        left: 0px;
+                        max-width: 580px;
+                        width: 100%;
+                        max-height: 471px;
+                        height: 100%;
+                        background-color: #55B7FF;
+                    }
+                    img {
+                        max-width: 630px;
+                        width: 100%;
+                    }
+                }
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 10px 0 60px;
+                    max-width: 460px;
+                    width: 100%;
+                    color: #2C4058;
+                    h5 {
+                        font-family: $book;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                    h4 {
+                        font-family: $bold;
+                        font-size: 38px;
+                        margin: 0;
+                    }
+                    p {
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 18px;
+                        margin:30px 0 ;
+                    }
+                    &__button {
+                        width: 190px;
+                        height: 50px;
+                        border: 1px solid #2C4058;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 17px;
+                            font-family: $book;
+                            font-size: 14px;
+                            color: #2C4058;
+                        }
+                    }
+                    p:last-child {
+                        margin-top: 40px;
+                        font-family:'Open Sans', sans-serif;
+                        font-size: 18px;
+                        font-style: italic;
+                        i {
+                            color: #2C4058;
+                        }
+                    }
+                }
+            }
+            
+        }
+        &__commerce {
+            width: 100%;
+            .commerce__body {
+                margin: 100px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                &__img {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: flex-start;
+                    max-width: 850px;
+                    width: 100%;
+                    position: relative;
+                    .commerce__img__bg {
+                        padding-left: 50px;
+                        position: absolute;
+                        z-index: -10;
+                        top: -50px;
+                        right: 0px;
+                        max-width: 580px;
+                        width: 100%;
+                        max-height: 471px;
+                        height: 100%;
+                        background-color: #55B7FF;
+                    }
+                    img {
+                        max-width: 630px;
+                        width: 100%;
+                    }
+                }
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 0 60px 0 10px ;
+                    max-width: 460px;
+                    width: 100%;
+                    color: #2C4058;
+                    h5 {
+                        font-family: $book;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        font-weight: 400;
+                        margin: 0;
+                    }
+                    h4 {
+                        font-family: $bold;
+                        font-size: 38px;
+                        margin: 0;
+                    }
+                    p {
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 18px;
+                        margin:30px 0 ;
+                    }
+                    &__button {
+                        width: 190px;
+                        height: 50px;
+                        border: 1px solid #2C4058;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 17px;
+                            font-family: $book;
+                            font-size: 14px;
+                            color: #2C4058;
+                        }
+                    }
+                    p:last-child {
+                        margin-top: 40px;
+                        font-family:'Open Sans', sans-serif;
+                        font-size: 18px;
+                        font-style: italic;
+                        i {
+                            color: #2C4058;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .wedo {
+        max-width: 1920px;
+        width: 100%;
+        &__body {
+            padding: 50px 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__header {
+                text-align: center;
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 2px;
+                    background-color: $grey;
+                }
+                h3 {
+                    font-family: $bold;
+                    font-size: 44px;
+                    color: $grey;
+                    margin-top: 40px;
+                }
+            }
+            &__trade {
+                width: 100%;
+                .trade__body {
+                    margin: 100px 0 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    &__img {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        max-width: 850px;
+                        width: 100%;
+                        position: relative;
+                        .trade__img__bg {
+                            padding-left: 50px;
+                            position: absolute;
+                            z-index: -10;
+                            top: -50px;
+                            left: 0px;
+                            max-width: 580px;
+                            width: 100%;
+                            max-height: 471px;
+                            height: 100%;
+                            background-color: #55B7FF;
+                        }
+                        img {
+                            max-width: 630px;
+                            width: 100%;
+                        }
+                    }
+                    &__text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0 10px 0 60px;
+                        max-width: 460px;
+                        width: 100%;
+                        color: #2C4058;
+                        h5 {
+                            font-family: $book;
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                            font-weight: 400;
+                            margin: 0;
+                        }
+                        h4 {
+                            font-family: $bold;
+                            font-size: 38px;
+                            margin: 0;
+                        }
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 18px;
+                            margin:30px 0 ;
+                        }
+                        &__button {
+                            width: 190px;
+                            height: 50px;
+                            border: 1px solid #2C4058;
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                text-align: center;
+                                padding: 17px;
+                                font-family: $book;
+                                font-size: 14px;
+                                color: #2C4058;
+                            }
+                        }
+                        p:last-child {
+                            margin-top: 40px;
+                            font-family:'Open Sans', sans-serif;
+                            font-size: 18px;
+                            font-style: italic;
+                            i {
+                                color: #2C4058;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            &__commerce {
+                width: 100%;
+                .commerce__body {
+                    margin: 100px 0 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    &__img {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-start;
+                        max-width: 850px;
+                        width: 100%;
+                        position: relative;
+                        .commerce__img__bg {
+                            padding-left: 50px;
+                            position: absolute;
+                            z-index: -10;
+                            top: -50px;
+                            right: 0px;
+                            max-width: 580px;
+                            width: 100%;
+                            max-height: 471px;
+                            height: 100%;
+                            background-color: #55B7FF;
+                        }
+                        img {
+                            max-width: 630px;
+                            width: 100%;
+                        }
+                    }
+                    &__text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0 60px 0 10px ;
+                        max-width: 460px;
+                        width: 100%;
+                        color: #2C4058;
+                        h5 {
+                            font-family: $book;
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                            font-weight: 400;
+                            margin: 0;
+                        }
+                        h4 {
+                            font-family: $bold;
+                            font-size: 38px;
+                            margin: 0;
+                        }
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 18px;
+                            margin:30px 0 ;
+                        }
+                        &__button {
+                            width: 190px;
+                            height: 50px;
+                            border: 1px solid #2C4058;
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                text-align: center;
+                                padding: 17px;
+                                font-family: $book;
+                                font-size: 14px;
+                                color: #2C4058;
+                            }
+                        }
+                        p:last-child {
+                            margin-top: 40px;
+                            font-family:'Open Sans', sans-serif;
+                            font-size: 18px;
+                            font-style: italic;
+                            i {
+                                color: #2C4058;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .wedo {
+        max-width: 1920px;
+        width: 100%;
+        &__body {
+            padding: 50px 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__header {
+                text-align: center;
+                .line {
+                    margin: 0 auto;
+                    width: 100px;
+                    height: 2px;
+                    background-color: $grey;
+                }
+                h3 {
+                    font-family: $bold;
+                    font-size: 36px;
+                    color: $grey;
+                    margin-top: 20px;
+                }
+            }
+            &__trade {
+                width: 100%;
+                .trade__body {
+                    margin: 50px 0 0 0;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    &__img {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        max-width: 850px;
+                        width: 100%;
+                        position: relative;
+                        .trade__img__bg {
+                            padding-left: 50px;
+                            position: absolute;
+                            z-index: -10;
+                            top: -50px;
+                            left: 0px;
+                            max-width: 580px;
+                            width: 100%;
+                            max-height: 471px;
+                            height: 100%;
+                            background-color: #55B7FF;
+                        }
+                        img {
+                            max-width: 630px;
+                            width: 100%;
+                        }
+                    }
+                    &__text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0 10px 0 10px;
+                        max-width: 460px;
+                        width: 100%;
+                        color: #2C4058;
+                        align-items: center;
+                        text-align: center;
+                        h5 {
+                            font-family: $book;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-weight: 400;
+                            margin: 0;
+                        }
+                        h4 {
+                            font-family: $bold;
+                            font-size: 30px;
+                            margin: 0;
+                        }
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 18px;
+                            margin:15px 0 ;
+                        }
+                        &__button {
+                            width: 190px;
+                            height: 50px;
+                            border: 1px solid #2C4058;
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                text-align: center;
+                                padding: 17px;
+                                font-family: $book;
+                                font-size: 14px;
+                                color: #2C4058;
+                            }
+                        }
+                        p:last-child {
+                            margin: 20px 0 20px 0px;
+                            font-family:'Open Sans', sans-serif;
+                            font-size: 18px;
+                            font-style: italic;
+                            i {
+                                color: #2C4058;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            &__commerce {
+                width: 100%;
+                .commerce__body {
+                    margin: 30px 0 0 0;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: flex-end;
+                    &__img {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: flex-start;
+                        max-width: 850px;
+                        width: 100%;
+                        position: relative;
+                        .commerce__img__bg {
+                            padding-left: 50px;
+                            position: absolute;
+                            z-index: -10;
+                            top: -50px;
+                            right: 0px;
+                            max-width: 580px;
+                            width: 100%;
+                            max-height: 471px;
+                            height: 100%;
+                            background-color: #55B7FF;
+                        }
+                        img {
+                            max-width: 630px;
+                            width: 100%;
+                        }
+                    }
+                    &__text {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 0 10px 0 10px ;
+                        max-width: 460px;
+                        width: 100%;
+                        color: #2C4058;
+                        text-align: center;
+                        h5 {
+                            font-family: $book;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-weight: 400;
+                            margin: 0;
+                        }
+                        h4 {
+                            font-family: $bold;
+                            font-size: 30px;
+                            margin: 0;
+                        }
+                        p {
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: 18px;
+                            margin:15px 0 ;
+                        }
+                        &__button {
+                            width: 190px;
+                            height: 50px;
+                            border: 1px solid #2C4058;
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                text-align: center;
+                                padding: 17px;
+                                font-family: $book;
+                                font-size: 14px;
+                                color: #2C4058;
+                            }
+                        }
+                        p:last-child {
+                            margin: 20px 0 0 0;
+                            font-family:'Open Sans', sans-serif;
+                            font-size: 18px;
+                            font-style: italic;
+                            i {
+                                color: #2C4058;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.footer {
+    max-width: 1920px;
+    width: 100%;
+    position: relative;
+    padding: 200px 0;
+    background-image: linear-gradient(45deg, rgb(85, 183, 255, 0.8) 0%, rgb(125, 89, 255) 100%),url(../img/imggallery1.png);
+    background-size: cover;
+
+    &__body {
+        max-width: 770px;
+        width: 100%;
+        margin: 0 auto;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            .text__logo {
+                margin: 40px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 55px;
+                display: flex;
+                .footer__social {
+                    display: flex;
+                    a {
+                        margin: 0 10px;
+                        width: 41px;
+                        height: 41px;
+                        border-radius: 50%;
+                        border: 1px solid white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+            .text__copyrights {
+                font-family: $book;
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 785px) {
+    .footer {
+        padding: 0px 0 100px 0;
+        &__body {
+            &__text {
+                margin: 0 10px;
+            }
+        }
+    
+    }
+}
+@media screen and (max-width: 490px) {
+    .footer {
+        max-width: 1920px;
+        width: 100%;
+        position: relative;
+        padding: 0px 0 10px 0;
+        background-image: linear-gradient(45deg, rgb(85, 183, 255, 0.8) 0%, rgb(125, 89, 255) 100%),url(../img/imggallery1.png);
+        background-size: cover;
+    
+        &__body {
+            max-width: 770px;
+            width: 100%;
+            margin: 0 auto;
+            &__text {
+                margin: 0 10px;
+                display: flex;
+                flex-direction: column;
+                .text__logo {
+                    margin: 10px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    .footer__social {
+                        display: flex;
+                        a {
+                            margin: 0 10px;
+                            width: 41px;
+                            height: 41px;
+                            border-radius: 50%;
+                            border: 1px solid white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+                .text__copyrights {
+                    text-align: center;
+                    font-size: 8px;
+                }
+            }
+        }
+    
+    }
+}

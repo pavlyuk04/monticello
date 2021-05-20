@@ -1,0 +1,183 @@
+$grey: #2C4058;
+$bold: 'gothambold1';
+$medium: 'gothammedium';
+$book: 'gothambook';
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    padding: 140px 0;
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        &__header {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            .line {
+                width: 100px;
+                height: 2px;
+                background-color: $grey;
+                margin: 0 auto;
+            }
+            h3 {
+                margin: 40px 0 60px 0 ;
+                font-family: $medium;
+                color: $grey;
+                font-size: 44px;
+            }
+        }
+        &__images {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .images__360 {
+                position: relative;
+                margin: 5px;
+                height: auto;
+                display: flex;
+                align-items: center;
+                
+                img {
+                    max-width: 580px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .images__360::after{
+                transition: .2s;
+                content: ' ';
+                position: absolute;
+                background: url(../img/360.svg);
+                top: 40%;
+                left: 44%;
+                width: 80px;
+                height: 80px;
+                opacity: 0;
+                z-index: 10;
+            }
+            .images__360:hover::after{
+                transition: .2s;
+                opacity: 1;
+            }
+            .images__others {
+                max-width: 580px;
+                width: 100%;
+                height: auto;
+                
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                    .images__others__wrap{
+                        height: auto;
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 580px;
+                        width: 100%;
+                        margin: 5px 0;
+                        .images__others__wrap-img {
+                            height: auto;
+                            max-width: 286px;
+                            width: 100%;
+                            min-width: 130px;
+                            margin: 0px;
+                        }
+                    }              
+            }
+        }   
+        &__button {
+            margin: 60px 0 0 0;
+            width: 190px;
+            height: 50px;
+            border: 1px solid $grey;
+            a {
+                display: block;
+                padding: 18px 0;
+                text-decoration: none;
+                text-align: center;
+                color: $grey;
+                font-family: $book;
+                font-size: 14px;
+            }
+        } 
+    }
+}
+.map {
+    max-width: 1920px;
+    width: 100%;
+    height: 700px;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1920px;
+        width: 100%;
+        padding: 50px 0 50px 0;
+        &__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            &__header {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                .line {
+                    width: 100px;
+                    height: 2px;
+                    background-color: $grey;
+                    margin: 0 auto;
+                }
+                h3 {
+                    margin: 20px 0 20px 0 ;
+                    font-family: $medium;
+                    color: $grey;
+                    font-size: 44px;
+                }
+            }
+           
+            &__button {
+                margin: 20px 0 0 0;
+                width: 190px;
+                height: 50px;
+                border: 1px solid $grey;
+                a {
+                    display: block;
+                    padding: 17px 0;
+                    text-decoration: none;
+                    text-align: center;
+                    color: $grey;
+                    font-family: $book;
+                    font-size: 14px;
+                }
+            } 
+        }
+    }
+    .map {
+        max-width: 1920px;
+        width: 100%;
+        height: 600px;
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
